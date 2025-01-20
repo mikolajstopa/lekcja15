@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Definiowanie kotwic w konkretnym miejscu strony</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5, kotwica, osyłacz, link, hiperłącze">
+    <meta name="description" content="Przykład definiowania kotwicy w konkretnym miejscu strony">
+    <meta name="author" content="Michał Okoń">
+    <meta name="robots" content="all">
+    <style>
+    img{
+        height: 500px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Jak definiujemy kotwicę na stronie:</h1>
+
+    <section>
+        <h2 id="a_top">Tutaj zdefiniowaliśmy kotwicę o nazwie <i>a_top</i></h2>
+        <p>
+            <a href="#a_bottom">To jest link do kotwicy dolnej</a>
+        </p>
+        <figure>
+            <img src="https://www.pzpn.pl/public/images/RKS_Rakow_herb.jpg" >
+            <figcaption>
+                Rysunek 1. Herb poprzedniego mistrza polski w piłce nożnej
+            </figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <br /><br /><br />
+        <p>
+            Zdefiniowanie kotwicy w konkretnym miejscu dokumentu HTML<br />
+            i wskazanie tej kotwicy w linku do tego dokumentu,<br />
+            spowoduje po jego otwarciu, przewinięcie -<br />
+            tak aby wiersz zawierający kotwicę znajdował się jak najbliżej górnej krawędzi okna przeglądarki.<br />
+            Aby było co przewijać dodamy dwa rysunki kotwic oraz linie puste,<br />
+            a następnie, zdefiniujemy dwie kotwice.
+        </p>
+        <br /><br /><br />
+    </section>
+
+    <section>
+        <a name="a_bottom"></a>
+        <h2>Tutaj została zdefiniowana kotwica o nazwie <i>a_bottom</i></h2>
+        <p>
+            <a href="#a_top">To jest link do kotwicy górnej</a>
+        </p>
+        <figure>
+            <img src="https://1.bp.blogspot.com/-3aYCgB9IdGs/XyycqTd0NhI/AAAAAAABA_s/oCd5sZ5Fyywv23IQNesIfJFUCtk8mdDfgCLcBGAsYHQ/s1601/JAGIELLONIA%2BBIALYSTOK-01.png">
+            <figcaption>
+                Rysunek 2. Herb obecnego mistrza polski w piłce nożnej
+            </figcaption>
+        </figure>
+    </section>
+</body>
+</html>
